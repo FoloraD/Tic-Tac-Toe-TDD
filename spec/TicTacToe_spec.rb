@@ -5,7 +5,7 @@ require_relative '../TicTacToe.rb' # this adds the rb script to the test
 describe "grid_postion" do 
     gameboard = TicTacToe.new # creates new instance of TicTacToe class object
     it "gameboard will have an empty square at postion 0, the top left corner" do
-        expect(gameboard.grid_postion(" ")).to eq(" ")
+        expect(gameboard.grid_postion("")).to eq("")
 
     
     end
