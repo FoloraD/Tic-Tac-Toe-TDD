@@ -1,4 +1,4 @@
-require_relative '../TicTacToe.rb' # this adds the rb script to the test
+require 'TicTacToe' # this adds the rb script to the test
 
 #Does the game board have an empty square at postion 0 (the top left corner)
 
