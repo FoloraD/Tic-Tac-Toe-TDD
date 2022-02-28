@@ -1,5 +1,7 @@
-class TicTacToe               #TicTacToe class
-    def grid_position(position)     #grid position method
-     @position = position
-    end
+class TicTacToe
+   #method to check if the board is empty
+  def board
+    return [" ", " ", " ", " ", " ", " ", " ", " ", " " ]
+    
+    end  
 end

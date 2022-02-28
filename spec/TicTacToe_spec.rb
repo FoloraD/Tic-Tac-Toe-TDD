@@ -1,27 +1,21 @@
-require 'TicTacToe' # this adds the rb script to the test
+require 'TicTacToe.rb' # this adds the rb script to the test
 
-#Does the game board have an empty square at postion 0 (the top left corner)
 
-describe "grid_postion" do 
-    gameboard = TicTacToe.new # creates new instance of TicTacToe class object
-    it "gameboard will have an empty square at postion 0, the top left corner" do
-        expect(gameboard.grid_postion("")).to eq("")
+describe TicTacToe do 
+# ----Test 1: Empty Gameboard ----
+    it "has a gameboard consisiting of an array of 9 empty strings" do
+    #ARRANGE
+    tictactoe = TicTacToe.new
 
-    
+    #RESULT
+    result = tictactoe.board
+
+    #ASSERT
+    #expecting a empty array with 9 empty strings
+    expect(result).to eq([" ", " ", " ", " ", " ", " ", " ", " ", " " ])
+
     end
+
 
 end
 
-#---------- Bowling kata Example -------------
-# describe Bowling do
-#     before(:each) do
-#         @bowling = described_class.new
-#     end
-
-#     it "will return zero score at start of game (no bowling balls rolled)" do
-#         # Act
-#         result = @bowling.get_score("")
-
-#         # Assert
-#         expect(result).to eq(0)
-#     end
