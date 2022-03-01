@@ -25,6 +25,19 @@ describe TicTacToe do
 # -----------        
 # 7 | 8 | 9   
 
+it " displays the first row of gameboard to the screen" do
+    #ARRANGE
+    tictactoe = TicTacToe.new
+
+    #RESULT
+    result = tictactoe.display_board
+
+    #ASSERT
+    #expecting a empty array with 9 empty strings
+    expect(result).to eq([" ", "|", " ", " |", " ",])
+
+    end
+
 
 
 end
