@@ -55,10 +55,29 @@ it " displays the first row of gameboard to the screen" do
 
          # Output => 
          
+        #   |  |   
+
+        expect(result).to eq(["  |  |  "])
+    
+        end
+
+            # ----Test 4: Add separator to gameboard----
+    it " displays separator line under the the first row of gameboard" do
+        #ARRANGE
+        tictactoe = TicTacToe.new
+    
+        #RESULT
+        result = tictactoe.display_board
+    
+        #ASSERT
+        #expecting  the empty cells of the first row & a separator to be displayed to screen
+
+         # Output => 
+         
         #   |  | 
         # -----------   
 
-        expect(result).to eq(["  |  |  "])
+        expect(result).to eq([["  |  |  "]["-----------"]])
     
         end
 
