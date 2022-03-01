@@ -34,7 +34,7 @@ it " displays the first row of gameboard to the screen" do
 
     #ASSERT
     #expecting a empty array with 9 empty strings
-    expect(result).to eq([" ", "|", " ", " |", " ",])
+    expect(result).to eq(["   " "|" "   " "|" "   "])
 
     end
 

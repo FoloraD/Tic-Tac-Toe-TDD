@@ -7,7 +7,7 @@ class TicTacToe
     end 
     
     def display_board
-      row = [" ", "|", " ", " |", " "]
+      row = ["   " "|" "   " "|" "   "]
 
     end
 
