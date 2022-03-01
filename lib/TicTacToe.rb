@@ -8,8 +8,8 @@ class TicTacToe
     
     def display_board
       row = ["   " "|" "   " "|" "   "]
+      separator = "-----------"
 
     end
 
-   
 end

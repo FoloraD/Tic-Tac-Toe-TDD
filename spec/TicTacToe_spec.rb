@@ -16,8 +16,8 @@ describe TicTacToe do
 
     end
 
-# ----Test 2: display gameboard to the user/player ----
-# (visual representation of the board)
+# ---- Display gameboard to the user/player ----
+# Output => visual representation of the board as seen beloww
 
 # 1| 2 | 3
 # -----------             
@@ -25,6 +25,7 @@ describe TicTacToe do
 # -----------        
 # 7 | 8 | 9   
 
+# ----Test 2: Build first row ----
 it " displays the first row of gameboard to the screen" do
     #ARRANGE
     tictactoe = TicTacToe.new
@@ -33,12 +34,33 @@ it " displays the first row of gameboard to the screen" do
     result = tictactoe.display_board
 
     #ASSERT
-    #expecting a empty array with 9 empty strings
+    #expecting the empty cells of the first row to be displayed to screen
+    
+    # Output =>  |   |   
+
     expect(result).to eq(["   " "|" "   " "|" "   "])
 
     end
 
+    # ----Test 3: Build first row & separator ----
+    it " displays the first row of gameboard  & separator to the screen" do
+        #ARRANGE
+        tictactoe = TicTacToe.new
+    
+        #RESULT
+        result = tictactoe.display_board
+    
+        #ASSERT
+        #expecting  the empty cells of the first row & a separator to be displayed to screen
 
+         # Output => 
+         
+        #   |  | 
+        # -----------   
+
+        expect(result).to eq('["   " "|" "   " "|" "   "]', "-----------"))
+    
+        end
 
 end
 
