@@ -38,12 +38,12 @@ it " displays the first row of gameboard to the screen" do
     
     # Output =>  |   |   
 
-    expect(result).to eq(["   " "|" "   " "|" "   "])
+    expect(result).to eq(["  " "|" "  " "|" "  "])
 
     end
 
-    # ----Test 3: Build first row & separator ----
-    it " displays the first row of gameboard  & separator to the screen" do
+    # ----Test 3: Build first row with index position numbers----
+    it " displays the first row of gameboard  with index numbers" do
         #ARRANGE
         tictactoe = TicTacToe.new
     
@@ -58,7 +58,7 @@ it " displays the first row of gameboard to the screen" do
         #   |  | 
         # -----------   
 
-        expect(result).to eq('["   " "|" "   " "|" "   "]', "-----------"))
+        expect(result).to eq(["  |  |  "])
     
         end
 
