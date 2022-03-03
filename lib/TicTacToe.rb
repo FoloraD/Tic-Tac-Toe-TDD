@@ -4,9 +4,9 @@ class TicTacToe
     
     @board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
     
-    end 
+  end 
     
-    def display_board()
+  def display_board()
  
       puts " #{board[0]} | #{board[1]} | #{board[2]} "
       puts "-----------"
@@ -16,6 +16,15 @@ class TicTacToe
        
     end
 
+
+  def create_board
+    board_string = 
+      " #{board[0]} | #{board[1]} | #{board[2]} \n" + #line break \n
+      "-----------\n"+
+      " #{board[3]} | #{board[4]} | #{board[5]} \n" +
+      "-----------\n" +
+      " #{board[6]} | #{board[7]} | #{board[8]} "
+  end
 end
 
 # game = TicTacToe.new

@@ -42,7 +42,7 @@ describe TicTacToe do
 
 #     end
 
-it 'can display 3x3 grid in the terminal' do
+    it 'can display 3x3 grid in the terminal' do
     #ARRANGE
     tictactoe = TicTacToe.new
 
@@ -57,14 +57,32 @@ it 'can display 3x3 grid in the terminal' do
     # expect(gamedisplay).to eq(["  " "|" "  " "|" "  "])
     # expect{my_function}.to output( 3 x 3 grid ).to_stdout
     
-    expect{gamedisplay}.to output(" #{board[0]} " "|" " #{board[1]} " "|" " #{board[2]} \n"             "-----------\n" " #{board[3]} " "|" " #{board[4]} " "|" " #{board[5]} \n" "-----------\n" " #{board[6]} " "|" " #{board[7]} " "|" " #{board[8]} \n").to_stdout
+    expect{tictactoe.display_board}.to output(" #{board[0]} " "|" " #{board[1]} " "|" " #{board[2]} \n"             "-----------\n" " #{board[3]} " "|" " #{board[4]} " "|" " #{board[5]} \n" "-----------\n" " #{board[6]} " "|" " #{board[7]} " "|" " #{board[8]} \n").to_stdout
 
     
     
     end
+
+    it 'can return a string representation of the 3x3 grid' do
+
+        #ARRANGE
+        tictactoe = TicTacToe.new
+
+        #RESULT
+        board_string = tictactoe.create_board
+
+        expected_board_string = 
+            "   |   |   \n" +
+            "-----------\n" +
+            "   |   |   \n" +
+            "-----------\n" +
+            "   |   |   "
+        
+        expect(board_string).to eq(expected_board_string)
+    end
 end
 
-
+#To print string w
 
 
 
